@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header h1 .seo {
+    color: #d9dcd6;
+}
+
+/*This is changing the position and styling of the 3 navigation buttons*/
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header div ul {
+    list-style-type: none;
+}
+
+/*This changes the spacing between each navigation buttons at the tope of the main image*/
+.header div ul li{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/*This has to do with the 3 navigation buttons at the top of the page*/
+a {
+  color:  #ffffff;
+  text-decoration: none;
+}
+
+/*p is all the text inside of the 3 rows and the right aside, it is not the headers contained in them*/
+p {
+    font-size: 16px;
+}
+
+/*The class .hero is referencing the main image*/
+/*Changing the height changes the height of the main image*/
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*This class manipulates the space between the images on the 1st and 3rd rows; more specifically the space (distance) between the image and the text*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+/*When I took the value for the float off it changed the 2nd rows image to the left.  It was on the right at first*/
+/*Changing the margin-left value did not seem to affect the contents of the 2nd row box*/
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/*This class manipulates the size of each of the boxes that comprise the three rows*/
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*This class manipulates the right-aside*/
+/*When I manipulated the margin-right the right aside moved to under the three rows on the right of the page. The change was from 20px to 200px*/
+/*Changing the padding from 20px to 200px caused the right aside to become wider and the information was more compact inside of the box; left margin huge*/
+/*Changing the height did not do anything to the box or its contents*/
+/*Changing the width changed the with of the box and the layout of the contents*/
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/*Combined these three classes; .benefit-lead, .benefit-brand, and .benefit-cost under the class .artext indicating aside right text*/
+/*This has to do with the text color and margin of the bottom of the text spacing*/
+/*Combined these three classes; .benefit-lead h3,.benefit-brand h3, and .benefit-cost h3  with artext because they are all manipulating the same thing*/
+/*This creates the space between the image and the h3 header on the right aside- Lead generation Brand awareness and Cost management */
+
+.artext {
+    margin-bottom: 32px;
+    color: #ffffff;
+    text-align: center; 
+    }
+
+/*Combined these three classes*/
+/*This information sytles the right aside*/
+/*display: block; In combination with float and position, determines the type of box or boxes that are generated for an element*/
+/*margin; sets thickness for the margin area*/
+/*max-width; constrains content width to a certain range; when I manipulate this feature it seems to change the length and not the width?*/
+/*????I do not know why I cannot put this with the class=.artext nor can I take the img off the last part of the class????*/
+.benefit-lead img,
+.benefit-brand img,
+.benefit-cost img{
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/*Combined these three classes .search-engine-optimization, .online-reputation-management, and .social-media-marketing to the class=rowimage*/
+/*This information sytles the three boxes (rows) under the main image*/
+/*This styles the thickness of the margin area under each box*/
+.rowimage{
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/*Combined these three classes*/
+/*This class manipulates the size of the image in the three boxes (rows)*/
+.search-engine-optimization img,
+.online-reputation-management img,
+.social-media-marketing img {
+    max-height: 200px;
+}
+
+/*Combined these three classes*/
+/*This class manipulates the size of the three headers (h2) three boxes (rows)*/
+.search-engine-optimization h2,
+.online-reputation-management h2,
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
